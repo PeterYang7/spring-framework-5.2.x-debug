@@ -8,4 +8,16 @@
 		<property name="age" value="21"></property>
 	</bean>
 
+<!--	<bean id="a" class="com.spring.bean.A">-->
+<!--		<property name="id" value="1"></property>-->
+<!--		<property name="name" value="jack"></property>-->
+<!--		<property name="b" value="b"></property>-->
+<!--	</bean>-->
+<!--	-->
+<!--	<bean id="b" class="com.spring.bean.B">-->
+<!--		<property name="id" value="2"></property>-->
+<!--		<property name="name" value="lucy"></property>-->
+<!--		<property name="a" value="a"></property>-->
+<!--	</bean>-->
+
 </beans>
