@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class MyClassPathXmlApplicationContext extends ClassPathXmlApplicationContext {
 
-	public MyClassPathXmlApplicationContext(String...configLocations){
+	public MyClassPathXmlApplicationContext(String... configLocations) {
 		super(configLocations);
 	}
 

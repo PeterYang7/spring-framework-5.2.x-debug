@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:peter="http://www.peter.com/schema/user"
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.peter.com/schema/user  http://www.peter.com/schema/user.xsd">
+
+	<peter:user id="peter" username="ycb"  email="ycb@qq.com" password="root"></peter:user>
+
+	<context:property-placeholder location="classpath:db.properties"></context:property-placeholder>
 
 	<bean id="user" class="com.spring.bean.User">
 		<property name="name" value="peter"></property>

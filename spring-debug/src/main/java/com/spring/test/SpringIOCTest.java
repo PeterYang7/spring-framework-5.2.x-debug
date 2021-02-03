@@ -1,7 +1,7 @@
 package com.spring.test;
 
-import com.spring.bean.User;
 import com.spring.extend.MyClassPathXmlApplicationContext;
+import com.spring.selftag.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -20,5 +20,7 @@ public class SpringIOCTest {
 //		User user1 = (User) context.getBean("user");
 //		System.out.println(user1);
 
+		User user = (User) applicationContext.getBean("peter");
+		System.out.println(user.getUsername());
 	}
 }
